@@ -1,4 +1,4 @@
-import getdate
+import CalcPlantao
 
 salario = float(input("Salario:"))
 horas_60 = float(input("Qtd. de horas 60%:"))
@@ -6,7 +6,7 @@ horas_100 = float(input("Qtd. de horas 100%:"))
 adNot = float(input("Qtd. de Adicional Noturno:"))
 
 def calcula_plantao():
-    return ((salario / 220) * 0.33) * getdate.sobAvisoCount
+    return ((salario / 220) * 0.33) * CalcPlantao.sobAvisoCount
 
 def calcula_he60():
     return ((salario/220)*1.6) * horas_60
